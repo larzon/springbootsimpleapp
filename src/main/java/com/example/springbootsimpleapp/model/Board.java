@@ -23,7 +23,6 @@ public class Board implements Serializable {
 			strategy = GenerationType.SEQUENCE, 
 			generator = "board_sequence"
 	)
-	//@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable = false, updatable = false)
 	private Long id;
 	private String name;
@@ -49,7 +48,7 @@ public class Board implements Serializable {
 		return this.name;
 	}
 	
-	public void setId(String name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}
